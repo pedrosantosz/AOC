@@ -15,5 +15,5 @@ loop:
 	j loop			# volta para o começo do loop
 	
 fim:	
-	sh $t1, 0x00($t0)	# armazena o resultado na memória de dados
+	sw $t1, 0x00($t0)	# armazena o resultado na memória de dados
 	

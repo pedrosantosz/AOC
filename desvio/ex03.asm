@@ -1,5 +1,5 @@
 .data
-	x: .word 10
+	x: .word 7
 	y: .space 4
 	
 .text
@@ -24,4 +24,4 @@ loop:
 	j loop			# volta pro começo do loop
 	
 fim:	
-	sh $t5, 0x04($t0)	# guarda o resultado como halfword no segundo endereço da memória de dados
+	sw $t5, 0x04($t0)	# guarda o resultado no segundo endereço da memória de dados
